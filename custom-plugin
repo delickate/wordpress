@@ -1,0 +1,31 @@
+<?php
+  /*
+  Plugin name: Sani Plugin
+  Plugin URI: http://www.go4smart.com
+  Description: This plugin has copyrights by delickate 
+  Author: SANI HYNE
+  Author URI: http://www.go4smart.com
+  Version: 1.0
+  */
+  
+  register_activation_hook( __FILE__, 'dothisonactivation' );
+  
+  function dothisonactivation() 
+  {
+    //YOUR CODE 
+  }
+  
+  register_deactivation_hook( __FILE__, 'dothisondeactivation' );
+  
+  function dothisondeactivation() 
+  {
+    //YOUR CODE
+  }
+  
+  register_uninstall_hook( __FILE__, 'dothisonuninstall' );
+  
+  function dothisonuninstall() 
+  {
+    // Uninstallation stuff here
+  }	
+?>
